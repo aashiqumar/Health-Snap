@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/color_code_background"
+    tools:context=".Home_page">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView2"
+        android:layout_width="356dp"
+        android:layout_height="685dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="196dp"
+
+        android:layout_marginEnd="9dp"
+        android:background="@drawable/curve_button"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="137dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="36dp"
+        android:text="  HealthSnap v1.0 \nDeveloped by 50/22"
+        android:textAlignment="center"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <Button
+        android:id="@+id/btnAppoint"
+        android:layout_width="173dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="44dp"
+        android:background="@color/common_google_signin_btn_text_light_focused"
+        android:clickable="true"
+        android:drawableStart="@drawable/ic_appoitment_btn"
+        android:hint="APPOINTMENT"
+        android:padding="5dp"
+        android:text="Appointment"
+        android:textColor="@android:color/background_light"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="121dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="4dp"
+        android:background="@color/design_default_color_error"
+        android:clickable="true"
+        android:drawableStart="@drawable/ic_logout"
+        android:padding="5dp"
+        android:text="LOGOUT"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPatient" />
+
+    <Button
+        android:id="@+id/btnStock"
+        android:layout_width="224dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/design_default_color_on_secondary"
+        android:clickable="true"
+        android:drawableStart="@drawable/ic_stock_btn"
+        android:padding="5dp"
+        android:text="STOCK"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAppoint" />
+
+    <!--    <ImageView-->
+<!--        android:id="@+id/imageView6"-->
+<!--        android:layout_width="71dp"-->
+<!--        android:layout_height="65dp"-->
+<!--        android:src="@drawable/medicine"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/btnMedics"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/btnMedics"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/btnMedics"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/btnMedics" />-->
+
+
+    <Button
+        android:id="@+id/btnPatient"
+        android:layout_width="173dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="4dp"
+        android:background="@color/colorAccent"
+        android:clickable="true"
+        android:drawableStart="@drawable/ic_bill_btn"
+        android:padding="5dp"
+        android:text="BILL"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rViewPlus"
+        android:layout_width="354dp"
+        android:layout_height="464dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogout" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Appointments"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnStock" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="3dp"
+        android:text="Dashboard"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

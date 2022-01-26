@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/color_code_background"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/color_code_background"
+        tools:context=".Billing">
+
+
+        <Button
+            android:id="@+id/btnStockBack"
+            android:layout_width="49dp"
+            android:layout_height="51dp"
+            android:background="@drawable/ic_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView3"
+            android:layout_width="363dp"
+            android:layout_height="740dp"
+            android:layout_marginTop="69dp"
+            android:background="@drawable/curve_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/txtM_Name"
+            android:layout_width="229dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/custom_billing"
+            android:drawableStart="@drawable/ic_item_medic"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:focusable="true"
+            android:hint="Medicine Name"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:paddingEnd="10dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/recyclerView3" />
+
+        <EditText
+            android:id="@+id/txtM_Id"
+            android:layout_width="94dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/custom_billing"
+            android:drawableStart="@drawable/ic_item_id"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:focusable="true"
+            android:hint="ID"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:paddingEnd="10dp"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/recyclerView3" />
+
+        <EditText
+            android:id="@+id/txtM_ManDate"
+            android:layout_width="159dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/custom_billing"
+            android:drawableStart="@drawable/custom_date_icon"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:focusable="true"
+            android:hint="Man. Date
+"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:paddingEnd="10dp"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtM_Id" />
+
+        <EditText
+            android:id="@+id/txtM_ExpDate"
+            android:layout_width="159dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/custom_billing"
+            android:drawableStart="@drawable/ic_expiry_date"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:focusable="true"
+            android:hint="Exp. Date"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:paddingEnd="10dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtM_Name" />
+
+        <EditText
+            android:id="@+id/txtStockQuantity"
+            android:layout_width="159dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/custom_billing"
+            android:drawableStart="@drawable/ic_quantity"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:focusable="true"
+            android:hint="Quantity"
+            android:inputType="number"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:paddingEnd="10dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtM_ExpDate" />
+
+        <EditText
+            android:id="@+id/txtM_Bprice"
+            android:layout_width="150dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/custom_billing"
+            android:drawableStart="@drawable/custom_currecncy_icon"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:focusable="true"
+            android:hint="Buying Price"
+            android:inputType="number|numberDecimal"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:paddingEnd="10dp"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <EditText
+            android:id="@+id/txtM_TotalBprice"
+            android:layout_width="159dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/custom_billing"
+            android:clickable="true"
+            android:drawableStart="@drawable/custom_currecncy_icon"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="Click Here"
+            android:inputType="number|numberDecimal"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:paddingEnd="10dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtStockQuantity" />
+
+        <EditText
+            android:id="@+id/txtM_TotalSprice"
+            android:layout_width="159dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/custom_billing"
+            android:clickable="true"
+            android:drawableStart="@drawable/custom_currecncy_icon"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="Click Here"
+            android:inputType="number|numberDecimal"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:paddingEnd="10dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtM_TotalBprice" />
+
+        <EditText
+            android:id="@+id/txtM_Profit"
+            android:layout_width="159dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/custom_billing"
+            android:clickable="true"
+            android:drawableStart="@drawable/custom_currecncy_icon"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="Click Here"
+            android:inputType="number|numberDecimal"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:paddingEnd="10dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtM_TotalSprice" />
+
+        <EditText
+            android:id="@+id/txtM_Sprice"
+            android:layout_width="150dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/custom_billing"
+            android:drawableStart="@drawable/custom_currecncy_icon"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:focusable="true"
+            android:hint="Selling Price"
+            android:inputType="number|numberDecimal"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:paddingEnd="10dp"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtM_Bprice" />
+
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="124dp"
+            android:text="Update Stock"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnSaveStock"
+            android:layout_width="321dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="96dp"
+            android:background="@drawable/custom_billing"
+            android:text="Update Stock"
+            android:textColor="@color/design_default_color_secondary"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtM_Sprice" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="76dp"
+            android:layout_marginTop="15dp"
+            android:text="Quantity:"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtM_ManDate" />
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="104dp"
+            android:layout_marginTop="25dp"
+            android:text="Profit:"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtM_Sprice" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Per Quanity"
+            android:textColor="@android:color/background_dark"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Per Quanity"
+            android:textColor="@android:color/background_dark"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtM_Bprice" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="72dp"
+            android:text="Total Selling Price"
+            android:textColor="@android:color/background_dark"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtM_TotalBprice" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="57dp"
+            android:text="Total Buying Price"
+            android:textColor="@android:color/background_dark"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtStockQuantity" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="8dp"
+            android:text="="
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/txtM_TotalBprice"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="8dp"
+            android:text="="
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/txtM_TotalSprice"
+            app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

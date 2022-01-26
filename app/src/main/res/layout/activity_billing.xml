@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/color_code_background"
+    android:layout_height="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/color_code_background"
+    tools:context=".Billing">
+
+
+    <Button
+        android:id="@+id/btnPatientBack2"
+        android:layout_width="49dp"
+        android:layout_height="51dp"
+        android:background="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView3"
+        android:layout_width="363dp"
+        android:layout_height="740dp"
+        android:layout_marginTop="69dp"
+        android:background="@drawable/curve_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtPBillName1"
+        android:layout_width="343dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/custom_billing"
+        android:drawableStart="@drawable/custom_patient_icon"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:focusable="true"
+        android:hint="Patient Name"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:paddingEnd="10dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/recyclerView3" />
+
+    <EditText
+        android:id="@+id/txtPBillNumber"
+        android:layout_width="343dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/custom_billing"
+        android:drawableStart="@drawable/custom_smartphone_icon"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:focusable="true"
+        android:hint="Phone Number"
+        android:inputType="number"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:paddingEnd="10dp"
+        android:phoneNumber="true"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPBillName1" />
+
+    <EditText
+        android:id="@+id/txtPBillDate"
+        android:layout_width="159dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_billing"
+        android:drawableStart="@drawable/custom_date_icon"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:focusable="true"
+        android:hint="Date"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:paddingEnd="10dp"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPBillNumber" />
+
+    <EditText
+        android:id="@+id/txtPBillFee"
+        android:layout_width="163dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/custom_billing"
+        android:drawableEnd="@drawable/custom_currecncy_icon"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:focusable="true"
+        android:hint="Patient Fee"
+        android:inputType="number"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:paddingEnd="10dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPBillTime" />
+
+    <EditText
+        android:id="@+id/txtPBillTime"
+        android:layout_width="159dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/custom_billing"
+        android:drawableStart="@drawable/custom_time_icon"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:focusable="true"
+        android:hint="Time"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:paddingEnd="10dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPBillNumber" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="140dp"
+        android:text="Provide Bill"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:text="Fee:"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/txtPBillFee"
+        app:layout_constraintTop_toBottomOf="@+id/txtPBillDate" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txtPBillDescription"
+        android:layout_width="342dp"
+        android:layout_height="131dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_billing"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Patient Desription"
+        android:inputType="textMultiLine"
+        android:padding="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPBillFee" />
+
+    <Button
+        android:id="@+id/btnSaveBill"
+        android:layout_width="206dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/custom_billing"
+        android:text="Save Bill"
+        android:textColor="@color/design_default_color_secondary"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPBillDescription" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

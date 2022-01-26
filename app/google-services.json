@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "856595329980",
+    "project_id": "healthsnap-b9658",
+    "storage_bucket": "healthsnap-b9658.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:856595329980:android:257a4ed15e2aa44f5431b9",
+        "android_client_info": {
+          "package_name": "com.store.healthsnap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "856595329980-4cdujkbcjube717jilu175fm1h0g2l5m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.store.healthsnap",
+            "certificate_hash": "e88ed7c85d2bb0c869399c75bb62b20fe934ba50"
+          }
+        },
+        {
+          "client_id": "856595329980-5iqdvbdvn6q6rl3fkll88627bfoiujui.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpw7zG9MI2tUZbCYuw_9P9CC0Z1rxa91o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "856595329980-5iqdvbdvn6q6rl3fkll88627bfoiujui.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
